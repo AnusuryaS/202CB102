@@ -1,15 +1,10 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Table, Button } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+
+import React from 'react';
+import { Table} from 'semantic-ui-react';
+
 
 export default function Read() {
-const getData = () => {
-    axios.get(`http://20.244.56.144:80/train/trains`)
-        .then((getData) => {
-            setAPIData(getData.data);
-        })
-}
+
 
 return (
     <><div>
@@ -29,7 +24,7 @@ return (
 
             <Table.Body>
                 
-                    return (
+                    
                         <Table.Row>
                             <Table.Cell>Chennai Exp</Table.Cell>
                             <Table.Cell>2344</Table.Cell>
@@ -40,8 +35,7 @@ return (
                             <Table.Cell>5</Table.Cell>
                             <Table.Cell>15</Table.Cell>
                         </Table.Row>
-                    );
-                
+                    
             </Table.Body>
         </Table>
 
